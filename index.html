@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <title>Ahorcado!</title>
+</head>
+<body>
+    <header>
+        <img src="img/Logo.png" alt="Logo Alura" class="logo">
+    </header>
+    <body>
+        <div class="contenedorPrincipal">
+            <div class="contenedorCentrado">
+                <div  id="div1"  >
+                <ul class="ulEscritorio1-botones">
+                    <li><button class="escritorio1-botones-1" id="div1-bto1">Iniciar juego</button></li>
+                    <li> <button class="escritorio1-botones-2" id="div1-bto2">Agregar nueva palabra</button></li>
+                </ul>
+                </div>
+               
+                <div class="contenedorCentrado" id="div2" style="display: none">
+                    <input type="text" maxlength="8" placeholder="Ingrese una palabra" pattern="/[A-Z\ á\ é\ í\ ó\ ú\ ]+$/" class="textoDiv2" id="textoDiv2"></input>
+                    <br>
+                    <ul>
+                        <li> <img src="img/Vector.png" alt="Imagen advertencia" class="imgVector"><p class="pVector">Máx. de 8 letras</p></li>
+                        <li><button id="div2-bto1">Guardar y empezar</button><button id="div2-bto2">Cancelar</button></li>
+                    </ul>
+                   
+                    
+                    
+                    
+                </div>
+ 
+            <div class="contenedorCentrado" id="div3" style="display:none">
+                    <canvas id="horca" width="1200px" height="860px"></canvas>
+                    <ul class="bto-div3">
+                        <button id="div3-bto1">Nuevo juego</button>
+                        <button id="div3-bto2">Desistir</button>
+                    </ul>
+                
+                </div>
+
+            </div>
+        </div>
+    </body>
+  
+
+    <script src="script.js"></script>
+    <script src="ahorcado.js"></script>
+    <script src="DibujarAhorcado.js"></script>
+</body>
+</html>
